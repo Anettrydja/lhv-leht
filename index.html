@@ -4,31 +4,105 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LHV. </title>
+    <title>LHV</title>
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <script src="js/bootstrap.bundle.js"></script>
+    <script src="jquery.min.js"></script>
 </head>
 <body>
-    <header class="header">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-3">
-                    <img src="https://www.lhv.ee/assets/images/lhv-logo.svg" alt="lhv logo">
-                </div>
-                <div class="col-4">
-                    <ul class="list-unstyled">
-                        <li>Pank</li>
-                        <li>Finants</li>
-                        <li>Invest</li>
-                    </ul>
-                </div>
-                <div class="col-1">AVA KONTO</div>
-                <div class="col-1">SISENE</div>
-                <div class="col-1">EN</div>
-                <div class="col-2">RU</div>
+    
+    <!-- FIRST NAVBAR -->
+    <nav class="navbar navbar-expand-lg py-3">
+        <div class="container">
+            <a href="#" class="navbar-brand">
+                <img src="https://www.lhv.ee/assets/images/lhv-logo.svg" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#phonelangmenu" >
+                <a>ET <i class="bi bi-arrow-down-short"></i></a>
+            </button>
+            <a href="" class="btn btn-dark d-block d-sm-none d-md-none">SISENE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#phonenavmenu">
+                <span>
+                    <i class="bi bi-list"></i>
+                </span>
+            </button>
+            
+            <div class="pull-left d-none d-lg-block ">
+                <a>PANK</a> 
+                <br>
+                <a>FINANTSPORTAAL</a> 
+                <br>
+                <a>INVESTOR</a> 
+            </div>
+
+            <!-- Mobile view lang menu -->
+
+            <div class="collapse navbar-collapse" id="phonelangmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item display-block d-sm none d-md none">
+                        <a class="d-block d-sm-none">ET</a>
+                    </li>
+                    <li class="nav-item display-block d-sm none d-md none">
+                        <a class="d-block d-sm-none">EN</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Mobile view -->
+            <div class="collapse navbar-collapse" id="phonenavmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item display-block d-sm-none d-md-none">
+                        <a class="nav-link d-block d-sm-none"><strong class="text-dark">IGAPÄEVAPANGANDUS</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-block d-sm-none d-md-none">RAHA KASVATAMINE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link d-block d-sm-none d-md-none">LAEN JA LIISNG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-block d-sm-none d-md-none">KINDLUSTUS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-block d-sm-none d-md-none">PENSION</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-block d-sm-none d-md-none">Vajad abi?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a  class="nav-link d-block d-sm-none d-md-none">TULE KLIENDIKS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a  class="nav-link d-block d-sm-none d-md-none">KASULIKKU</a>
+                    </li>
+                    <li class="nav-item">
+                        <a  class="nav-link d-block d-sm-none d-md-none">LHV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a  class="nav-link d-block d-sm-none d-md-none">KONTAKT</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Full view -->
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link">AVA KONTO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">SISENE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">EN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">RU</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </header>
+    </nav>
+
     <div class="container">
         <div class="navbar navbar-expand-lg navbar-light bg-light"> 
             <div class="text-center container-fluid">
@@ -111,7 +185,7 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="https://www.lhv.ee/assets/images/headers/aktsiad-yle-bg.svg" class="d-block w-100" alt="lhv">
+                <img src="https://www.lhv.ee/assets/images/headers/pension_fg_2022-03.svg" class="d-block w-100" alt="lhv">
               </div>
               <div class="carousel-item">
                 <img src="https://www.lhv.ee/assets/images/headers/kindlustus-kasko-fg.svg" class="d-block w-100" alt="lhv">
@@ -152,7 +226,7 @@
                     <img src="https://www.lhv.ee/assets/images/headers/ukraina-esileht-m.svg" width="150px" height="150px" alt="Ukraina">
                 </div>
             </div>
-            <div style="background-color: #f9f0e9" class="col-md-10 col-md-offset-1" id="secondcardBox">
+            <div style="background-color: #f9f0e9" class="col-xs-12 col-md-10 col-md-offset-1 cardBox" id="secondcardBox">
                 <div class="" id="secondtcardText">
                     <h2>
                         <strong>Soovitused tuludeklaratsiooni täitmiseks</strong>
@@ -189,197 +263,188 @@
 
         </div>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 blog">
-                <h3>Loe blogi</h3>
-                <div class="blog-wrap">
-                    <a class="title bubbleChat" id="length-control" href="https://www.lhv.ee/et/blogi/eksperdid-annavad-nou-kas-kodu-ostuga-oodata-voi-kiirustada">
-                        <p>Kui palju peaks iga kuu kõrvale panema, et koguda lapsele tema esimese kodu sissemakse?</p>
-                    </a>
-                    <div class="blog-date">
-                        <p>16.02.2022</p>
-                        
-                    </div>
-                </div>
-                <div class="blog-wrap">
-                    <a class="title bubbleChat" id="length-control" href="https://www.lhv.ee/et/blogi/eksperdid-annavad-nou-kas-kodu-ostuga-oodata-voi-kiirustada">
-                        <p>Eksperdid annavad nõu: kas kodu ostuga tasub oodata või kiirustada?</p>
-                    </a>
-                    <div class="blog-date">
-                        <p>16.02.2022</p>
-                    </div>
-                </div>
-                <div class="read-all">
-                    <p>
-                        <a href="https://www.lhv.ee/et/blogi" class="arrow-bold">
-                            <strong>Loe kõiki blogipostitusi </strong>
-                        </a>
-                    </p>
-                </div>
-            </div>
-            <div class="col-md-4 uudised">
-                <h3>Jälgi uudiseid</h3>
-                <div class="news-wrap">
-                    <a class="bubbleDoc" id="length-control" href="https://www.lhv.ee/et/uudised/2022/9">
-                        <p>Lasterikkad pered saavad nüüd kodu osta poole väiksema omafinantseeringuga</p>
-                    </a>
-                    <div class="news-date">
-                        <p>01.03.2022</p>
-                    </div>
-                </div>
-                <div class="news-wrap">
-                    <div class="news-wrap">
-                        <a class="bubbleDoc" id="length-control" href="https://www.lhv.ee/et/uudised/2022/8">
-                            <p>LHV võimaldab Ukrainasse tasuta makseid</p>
-                        </a>
-                        <div class="news-date">
-                            <p>26.02.2022</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="read-all">
-                    <p>
-                         <a href="https://www.lhv.ee/et/uudised" class="arrow-bold">
-                            <strong>Vaata kõiki uudiseid</strong>
-                        </a>
-                    </p>
-                </div>
 
-            </div>
-            <div class="col-md-4 podcast">
-                <h3>
-                    <a href="https://soundcloud.com/lhvpodcast" target="_blank">Kuula <em>podcast</em>'e</a>
-                </h3>
-                <div class="podcast-wrap">
-                    <a class="scloud" id="length-control" href="https://soundcloud.com/lhvpodcast/maaklerite-tund-5012022-votame-aasta-kokku" target="_blank">
-                        <p>Maaklerite tund: võtame aasta kokku</p>
-                    </a>
-                    <div class="podcast-date">
-                        <p>08.01.2022</p>
-                    </div>
-                </div>
-                <div class="podcast-wrap">
-                    <a class="scloud" id="length-control" href="https://soundcloud.com/lhvpodcast/heido-vitsur-ja-kristo-aab-arengutest-majanduses-lhv-podcast-21-2021" target="_blank">
-                        <p>Heido Vitsur ja Kristo Aab arengutest majanduses</p>
-                    </a>
-                    <div class="podcast-date">
-                        <p>28.12.2021</p>
-                    </div>
-                </div>
-                <div class="read-all">
-                    <p>
-                        <a href="https://soundcloud.com/lhvpodcast" class="arrow-bold" target="_blank">
-                            <strong>Kuula kõiki <em>podcaste</em></strong></a>
-                       </a>
-                   </p>
-                </div>
-
-            </div>
-        </div>
-        
-    </div>
-    <div style="background-color: #f9f0e9">
+    <!-- UUS Blogi/uudiste/podcasti voog -->
+    <section class="p-5">
         <div class="container">
-        <div class="row">
-            <dic class="flex-centered">
-                <div class="col-xs-12 col-sm-5 col-md-offset-1" id="rohelineList">
-                    <h2>
-                        <strong>LHV on roheline</strong>
-                    </h2>
-                    <p>
-                        "Teadvustame enda vastutust puhta keskkonna ja jätkusuutliku majanudse poole liikumisel."
-                    </p>
-                    <a class="arrow-bold">
-                        <strong>Loe lisa</strong>
-                    </a>
-                    <div class="col-xs-12 col-sm-3" id="rohlineImg">
-                    <img src="https://www.lhv.ee/assets/images/icons/illustrative/green-kontor.svg" alt="roheline">
+            <div class="row text-center">
+                <!-- BLOGI -->
+                <div class="col-md">
+                    <div class="card text-dark">
+                        <h3 class="card-title mb-3">Loe blogi</h3>
+                        <div class="card-body">
+                            <div class="blog-wrap">
+                                <img src="https://www.lhv.ee/assets/images/elements/blog.svg" alt="">
+                                    Koroonaaeg tõstis klientide tähelepanu reisikindlustuse suhtes
+                            </div>
+                            <div class="date">
+                                <p>11.04.2022</p>
+                            </div>
+                            <p class="card-text align-baseline">
+                                <img src="https://www.lhv.ee/assets/images/elements/blog.svg" alt="">
+                                Kui palju peaks iga kuu kõrvale panema, et koguda lapsele tema esimese kodu sissemakse?
+                            </p>
+                            <br>
+                            <p>16.02.2022</p>
+                        </div>
+                    </div>   
                 </div>
+                <!-- UUDISED -->
+                <div class="col-md">
+                    <div class="card bg-muted text-dark">
+                        <div class="card-body text-left">
+                            <h3 class="card-title mb-3">Jälgi uudiseid</h3>
+                                <p class="card-text text-left">
+                                    <img src="https://www.lhv.ee/assets/images/elements/read.svg" alt="">
+                                    Muudatused tööaegades ja maksete liikumises lihavõttepühade ajal
+                                </p>
+                        </div>
+                        <p class="text-left">13.04.2022</p>
+                        <div class="card-body text-left">
+                                <p class="card-text text-left">
+                                    <img src="https://www.lhv.ee/assets/images/elements/read.svg" alt="">
+                                    LHV investeerimisteenuste juhiks sai Andres Suimets
+                                </p>
+                        </div>
+                        <p class="text-left">13.04.2022</p>
+                    </div>   
                 </div>
-                
+                <!-- PODCAST -->
+                <div class="col-md">
+                    <div class="card bg-muted text-dark">
+                        <div class="card-body">
+                            <h3 class="card-title mb-3">Kuula <em>podcast</em>'e</h3>
+                                <p class="card-text text-left">
+                                    <img src="https://www.lhv.ee/assets/images/elements/play-video.svg" height="24px" width="24px" alt="">
+                                    Maaklerite tund: Märtsikuu turgudel
+                                    <br>
+                                </p>
+                                <p class="text-left">05.04.2022</p>
+                        </div>
+                        <div class="card-body text-left">
+                                <p class="card-text text-left">
+                                    <img src="https://www.lhv.ee/assets/images/elements/play-video.svg"height="24px" width="24px" alt="">
+                                    Kuldar Väärsi ettevõtlusest ja kaitsetööstusest
+                                </p>
+                        </div>
+                        <p class="text-left">05.04.2022</p>
+                    </div>   
+                </div>
             </div>
         </div>
-    </div>
-    </div>
+    </section>
+
+
+
+   
+
+    <!-- UUS LHV on roheline -->
+
+    <section class="p-5"style="background-color: #f9f0e9" >
+        <div class="container" >
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md p-5">
+                    <h2>LHV ON ROHELINE</h2>
+                    <p class="lead">
+                        Teadvustame enda vastutust puhta keskkonna ja jätkusuutliku majanduse poole liikumisel.
+                    </p>
+                    <a href="#" class="btn mt-3">Loe lisa
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="col-md">
+                    <img src="https://www.lhv.ee/assets/images/icons/illustrative/green-kontor.svg" class="rounded mx-auto d-block" alt="lhv_roheline">
+                </div>
+            </div>
+        </div>
+    </section>
     
+
+    <!-- TULE KLIENDIKS JNE -->
+    <section class="p-5">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md">
+                    <h3>Tule kliendiks</h3>
+                    <ul class="list-unstyled d-none d-md-block">
+                        <li>Eraklient</li>
+                        <li>Äriklient</li>
+                        <li>Noortepank</li>
+                        <li>Lapsekonto</li>
+                        <li>Au-klient</li>
+                        <li>Privaatsuspangandus</li>
+                        <li>Ava konto</li>
+                    </ul>
+                </div>
+                <div class="col-md">
+                    <h3>Kasulikku</h3>
+                    <ul class="list-unstyled d-none d-md-block">
+                        <li>Hinnakiri ja tingimused</li>
+                        <li>Ettepanekud ja kaebused</li>
+                        <li>Turvalisus</li>
+                        <li>Teata petulehest</li>
+                        <li>Teenuste seis</li>
+                        <li>KKK</li>
+                    </ul>
+                </div>
+                <div class="div col-md">
+                    <h3>LHV</h3>
+                    <ul class="list-unstyled d-none d-md-block">
+                        <li>Ettevõttest</li>
+                        <li>Investorile</li>
+                        <li>Tööpakkumised</li>
+                        <li>Hea tegu</li>
+                        <li>Roheline LHV</li>
+                        <li>Finantsportaal</li>
+                        <li>Uudised</li>
+                        <li>Blogi</li>
+                    </ul>
+                </div>
+                <div class="div col-md">
+                    <h3>KONTAKT</h3>
+                    <ul class="list-unstyled d-none d-md-block">
+                        <li>Kontaktid</li>
+                        <li>Kontorid</li>
+                        <li>Broneeri kohtumisaeg</li>
+                        <li>Sularahaautomaadid</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 </body>
 <footer class="footer">
     <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-                <h3>TULE KLIENDIKS</h3>
-                <ul class="list-unstyled">
-                    <li>Eraklient</li>
-                    <li>Äriklient</li>
-                    <li>Noortepank</li>
-                    <li>Lapsekonto</li>
-                    <li>Au-klient</li>
-                    <li>Privaatsuspangandus</li>
-                    <li>Ava konto</li>
-                </ul>
-            </div>
-            <div class="col-md-3">
-                <h3>KASULIKKU</h3>
-                <ul class="list-unstyled">
-                    <li>Hinnakiri ja tingimused</li>
-                    <li>Ettepanekud ja kaebused</li>
-                    <li>Turvalisus</li>
-                    <li>Teata petulehest</li>
-                    <li>Teenuste seis</li>
-                    <li>KKK</li>
-                </ul>
-            </div>
-            <div class="col-md-3">
-                <h3>LHV</h3>
-                <ul class="list-unstyled">
-                    <li>Ettevõttest</li>
-                    <li>Tööpakkumised</li>
-                    <li>Uudised</li>
-                    <li>Investor</li>
-                    <li>Finantsportaal</li>
-                    <li>Roheline LHV</li>
-                    <li>Hea tegu</li>
-                    <li>Blogi</li>
-                </ul>
-            </div>
-            <div class="col-md-3">
-                <h3>KONTAKT</h3>
-                <ul class="list-unstyled">
-                    <li>Kontaktid</li>
-                    <li>Kontorid</li>
-                    <li>Broneeri kohtumisaeg</li>
-                    <li>Sularahaautomaadid</li>
+        
+
+        <!-- FOOTER SOCIALS -->
+
+        <nav class="navbar navbar-expand-lg py-3">
+        <div class="container">
+            <a href="#" class="navbar-brand">
+                <img src="https://www.lhv.ee/assets/images/icons/small/insta.svg" alt="">
+                <img src="https://www.lhv.ee/assets/images/icons/small/fb.svg" alt="">
+                <img src="https://www.lhv.ee/assets/images/icons/small/youtube.svg" alt="">
+                <img src="https://www.lhv.ee/assets/images/icons/small/soundcloud.svg" alt="">
+            </a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#learn" class="nav-link">
+                            <img src="https://www.lhv.ee/assets/images/elements/app-store-et.svg" alt="">
+                            <img src="https://www.lhv.ee/assets/images/elements/google-play-et.svg" alt="">
+                            <img src="https://www.lhv.ee/assets/images/elements/huawei-et.svg" alt="">
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
-        <div class="row">
-            <div class="col-xs-12 footer-socials">
-                <a class="socials col-xs-12">
-                <img src="https://www.lhv.ee/assets/images/icons/small/soundcloud.svg" alt="soundcloud">
-                </a>
-                <a class="socials">
-                    <img src="https://www.lhv.ee/assets/images/icons/small/fb.svg" alt="fb">
-                </a>
-                <a class="socials">
-                    <img src="https://www.lhv.ee/assets/images/icons/small/youtube.svg" alt="yt">
-                </a>
-                <a class="socials">
-                    <img src="https://www.lhv.ee/assets/images/icons/small/insta.svg" alt="insta">
-                </a>
-            </div>
-            <div class="footer-apps">
-                <a class="apps">
-                    <img src="https://www.lhv.ee/assets/images/elements/app-store-et.svg" alt="appstore" class="footer-m-badge">
-                </a>
-                <a class="apps">
-                    <img src="https://www.lhv.ee/assets/images/elements/google-play-et.svg" alt="googleplay">
-                </a>
-                <a class="apps">
-                    <img src="https://www.lhv.ee/assets/images/elements/huawei-et.svg" alt="appgallery">
-                </a>
-            </div>
-        </div>
+    </nav>
+
+
+    <!-- FOOTER DISCLAIMER -->
         <div class="row">
             <div class="col-md-offset-1 disclaimer">
                 <p>AS LHV Group, Tartu mnt 2, 10145, Tallinn. Oled finantsteenuseid pakkuvate ettevõtete AS LHV Pank, AS LHV Finance, AS LHV Kindlustus ja AS LHV Varahaldus veebilehel. Enne finantsteenuse lepingu sõlmimist tutvu teenuse tingimustega või küsi lisainfot. Noteeringud on viivitusega.</p>
