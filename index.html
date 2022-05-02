@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LHV</title>
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/homepage.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="js/bootstrap.bundle.js"></script>
     <script src="jquery.min.js"></script>
 </head>
@@ -40,12 +45,10 @@
 
             <div class="collapse navbar-collapse" id="phonelangmenu">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item display-block d-sm none d-md none">
-                        <a class="d-block d-sm-none">ET</a>
-                    </li>
-                    <li class="nav-item display-block d-sm none d-md none">
-                        <a class="d-block d-sm-none">EN</a>
-                    </li>
+                    <ul class="mobile-option">
+                        <li class="d-block d-sm-none">EN</a></li>
+                        <li class="d-block d-sm-none">RU</a></li>
+                    </ul>
                 </ul>
             </div>
             <!-- Mobile view -->
@@ -55,7 +58,7 @@
                         <a class="nav-link d-block d-sm-none"><strong class="text-dark">IGAPÄEVAPANGANDUS</strong></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link d-block d-sm-none d-md-none">RAHA KASVATAMINE</a>
+                        <a class="nav-link d-block d-sm-none d-md-none text-dark">RAHA KASVATAMINE</a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link d-block d-sm-none d-md-none">LAEN JA LIISNG</a>
@@ -103,77 +106,34 @@
         </div>
     </nav>
 
-    <div class="container">
-        <div class="navbar navbar-expand-lg navbar-light bg-light"> 
-            <div class="text-center container-fluid">
-                    <ul class="nav">
-                        <li>
-                            <a>ID-KAART</a>
-                        </li>
-                    </ul>
-                    <ul class="nav">
-                        <li>
-                            <a>Mobiil-ID</a>
-                        </li>
-                    </ul>
-                    <ul class="nav">
-                        <li>
-                            <a>Smart-ID</a>
-                        </li>
-                    </ul>
-                    <ul class="nav">
-                        <li>
-                            <a>PIN-kalkulaator</a>
-                        </li>
-                    </ul>
-                    <ul class="nav">
-                        <li>
-                            <a>Salasõna</a>
-                        </li>
-                    </ul>
-                </div>
-                    <form class="d-flex" method="POST">
-                        <input class="form-control me-2" id="login-nickname" type="text" name="nickname" placeholder="Kasutajanimi">
-                        <button class="btn btn-dark" id="login-submit">Sisene</button>
-                    </form>
-           
-         </div>
-    </div>
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="text-center container-fluid">
-                <ul class="nav" role="navigation">
-                    <li>
-                        <a>IGAPÄEVAPANGANDUS</a>
-                    </li>
-                </ul>
-                <ul class="nav">
-                    <li>
-                        <a>RAHA KASVATAMINE</a>
-                    </li>
-                </ul>
-                <ul class="nav">
-                    <li>
-                        <a>LAEN JA LIISING</a>
-                    </li>
-                </ul>
-                <ul class="nav">
-                    <li>
-                        <a>KINDLUSTUS</a>
-                    </li>
-                </ul>
-                <ul class="nav">
-                    <li>
-                        <a>PENSION</a>
-                    </li>
-                </ul>
-                <ul class="nav">
-                    <li>
-                        <a>VAJAD ABI?</a>
-                    </li>
-                </ul>
+    <div class="containers">
+        <div class="container">
+            <div class="navbar"> 
+                    <ul class="list-group list-group-horizontal">
+                        <li class="list-group-item"><a>ID-kaart</a></li>
+                        <li class="list-group-item"><a>Mobiil-ID</a></li>
+                        <li class="list-group-item"><a>Smart-ID</a></li>
+                        <li class="list-group-item"><a>PIN-kalkulaator</a></li>
+                        <li class="list-group-item"><a>Salasõna</a></li>
+                      </ul>
+                 <form class="d-flex" method="POST">
+                    <input class="form-control me-2" id="login-nickname" type="text" name="nickname" placeholder="Kasutajanimi">
+                    <button class="btn btn-dark" id="login-submit">Sisene</button>
+                 </form>
             </div>
-        </nav>
+        </div>
+        <div class="container">
+            <div class="navbar">
+                <ul class="list-group list-group-horizontal">
+                    <li class="list-group-nav"><a>IGAPÄEVAPANGANDUS</a></li>
+                    <li class="list-group-nav"><a>RAHA KASVATAMINE</a></li>
+                    <li class="list-group-nav"><a>LAEN JA LIISING</a></li>
+                    <li class="list-group-nav"><a>KINDLUSTUS</a></li>
+                    <li class="list-group-nav"><a>PENSION</a></li>
+                    <li class="list-group-nav"><a>VAJAD ABI?</a></li>
+                  </ul>
+                </div>
+        </div>
     </div>
     <div class="container">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -211,9 +171,7 @@
 
         <!-- New keskmine -->
         
-    <section class="p-5">
-        <div class="container row margin-top-20" >
-            <div class="row align-items-center justify-content-between" style="background-color: #f9f0e9" >
+        <div class="sisu container row" >
                 <div class="col-md p-5">
                     <h2>Kuidas saan toetada Ukraina riiki ja rahvast?</h2>
                     <p class="lead">
@@ -224,15 +182,13 @@
                     </a>
                 </div>
                 <div class="col-md">
-                    <img src="https://www.lhv.ee/assets/images/headers/ukraina-esileht-m.svg" width="376px" height="376px" class="rounded mx-auto d-block" alt="lhv_roheline">
+                    <img src="https://www.lhv.ee/assets/images/headers/ukraina-esileht-m.svg" class="rounded mx-auto d-block" alt="lhv_roheline">
                 </div>
-            </div>
         </div>
 
-        <div class="container row py-4">
-            <div class="row align-items-center justify-content-between" style="background-color: #f9f0e9" >
+        <div class="sisu container row py-4">
                 <div class="col-md">
-                    <img src="https://www.lhv.ee/assets/images/headers/avaleht-tuludeklaratsioon-thumb.svg" width="376px" height="376px" class="rounded mx-auto d-block" alt="lhv_roheline">
+                    <img src="https://www.lhv.ee/assets/images/headers/avaleht-tuludeklaratsioon-thumb.svg" class="rounded mx-auto d-block" alt="lhv_roheline">
                 </div>
                 <div class="col-md p-5">
                     <h2>Soovitused tuludeklaratsiooni täitmiseks</h2>
@@ -243,12 +199,9 @@
                         <i class="bi bi-arrow-right"></i>
                     </a>
                 </div>
-                
-            </div>
         </div>
 
-        <div class="container row m-20">
-            <div class="row align-items-center justify-content-between" style="background-color: #f9f0e9" >
+        <div class="sisu container row m-20">
                 <div class="col-md p-5">
                     <h2>Tule ja anna oma panus parima panga eduloosse</h2>
                     <p class="lead">
@@ -259,25 +212,21 @@
                     </a>
                 </div>
                 <div class="col-md">
-                    <img src="https://www.lhv.ee/assets/images/headers/avaleht-tookuulutus-thumb.png" width="376px" height="376px" class="rounded mx-auto d-block" alt="lhv_roheline">
+                    <img src="https://www.lhv.ee/assets/images/headers/avaleht-tookuulutus-thumb.png" class="rounded mx-auto d-block" alt="lhv_roheline">
                 </div>
-            </div> 
         </div>
-
-    </section>
 
 
     
 
     <!-- UUS Blogi/uudiste/podcasti voog -->
-    <section class="p-5">
-        <div class="container">
+        <div class="container_blog">
             <div class="row text-center">
                 <!-- BLOGI -->
                 <div class="col-md">
-                    <div class="card text-dark">
+                    <div class="card1 ">
                         <h3 class="card-title mb-3">Loe blogi</h3>
-                        <div class="card-body">
+                        <div class="card-body1">
                             <div class="blog-wrap">
                                 <img src="https://www.lhv.ee/assets/images/elements/blog.svg" alt="">
                                     Koroonaaeg tõstis klientide tähelepanu reisikindlustuse suhtes
@@ -292,7 +241,14 @@
                             <br>
                             <p>16.02.2022</p>
                         </div>
-                    </div>   
+                    </div> 
+                     <div id="readAll">
+                         <p>
+                            <a href="#" class="btn mt-3"><strong>Loe kõiki blogipostitusi</strong>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                         </p>
+                     </div> 
                 </div>
                 <!-- UUDISED -->
                 <div class="col-md">
@@ -312,6 +268,13 @@
                                 </p>
                         </div>
                         <p class="text-left">13.04.2022</p>
+                        <div id="">
+                            <p>
+                               <a href="#" class="btn mt-3"><strong>Vaata kõiki uudiseid</strong>
+                                   <i class="bi bi-arrow-right"></i>
+                               </a>
+                            </p>
+                        </div> 
                     </div>   
                 </div>
                 <!-- PODCAST -->
@@ -324,7 +287,7 @@
                                     Maaklerite tund: Märtsikuu turgudel
                                     <br>
                                 </p>
-                                <p class="text-left">05.04.2022</p>
+                                <p class="text-left podcast" id="podcast-date">05.04.2022</p>
                         </div>
                         <div class="card-body text-left">
                                 <p class="card-text text-left">
@@ -333,11 +296,17 @@
                                 </p>
                         </div>
                         <p class="text-left">05.04.2022</p>
+                        <div id="">
+                            <p>
+                               <a href="#" class="btn mt-3"><strong>Kuula kõiki podcaste</strong>
+                                   <i class="bi bi-arrow-right"></i>
+                               </a>
+                            </p>
+                        </div> 
                     </div>   
                 </div>
             </div>
         </div>
-    </section>
 
 
 
@@ -367,10 +336,10 @@
 
     <!-- TULE KLIENDIKS JNE -->
     <section class="p-5">
-        <div class="container">
+        <div class="container-footer-navbar">
             <div class="row ">
                 <div class="col-md">
-                    <h3>Tule kliendiks</h3>
+                    <h3 class="d-none d-md-block">Tule kliendiks</h3>
                     <ul class="list-unstyled d-none d-md-block">
                         <li>Eraklient</li>
                         <li>Äriklient</li>
@@ -382,7 +351,7 @@
                     </ul>
                 </div>
                 <div class="col-md">
-                    <h3>Kasulikku</h3>
+                    <h3 class="d-none d-md-block">Kasulikku</h3>
                     <ul class="list-unstyled d-none d-md-block">
                         <li>Hinnakiri ja tingimused</li>
                         <li>Ettepanekud ja kaebused</li>
@@ -393,7 +362,7 @@
                     </ul>
                 </div>
                 <div class="div col-md">
-                    <h3>LHV</h3>
+                    <h3 class="d-none d-md-block">LHV</h3>
                     <ul class="list-unstyled d-none d-md-block">
                         <li>Ettevõttest</li>
                         <li>Investorile</li>
@@ -406,13 +375,80 @@
                     </ul>
                 </div>
                 <div class="div col-md">
-                    <h3>KONTAKT</h3>
+                    <h3 class="d-none d-md-block">KONTAKT</h3>
                     <ul class="list-unstyled d-none d-md-block">
                         <li>Kontaktid</li>
                         <li>Kontorid</li>
                         <li>Broneeri kohtumisaeg</li>
                         <li>Sularahaautomaadid</li>
                     </ul>
+                </div>
+            </div>
+            <!-- ACCORDION MOBILE -->
+            <div class="accordion d-md-none  d-lg-none d-xl-none " id="myAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne">TULE KLIENDIKS</button>									
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                    <ul class="list-unstyled card-body">
+                        <li>Eraklient</li>
+                        <li>Äriklient</li>
+                        <li>Noortepank</li>
+                        <li>Lapsekonto</li>
+                        <li>Au-klient</li>
+                        <li>Privaatsuspangandus</li>
+                        <li>Ava konto</li>
+                    </ul>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="d-none d-md-block">KASULIKKU</h3>
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">KASULIKKU</button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                        <ul class="list-unstyled card-body">
+                            <li>Hinnakiri ja tingimused</li>
+                            <li>Ettepanekud ja kaebused</li>
+                            <li>Turvalisus</li>
+                            <li>Teata petulehest</li>
+                            <li>Teenuste seis</li>
+                            <li>KKK</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="d-none d-md-block">LHV</h3>
+                    <h2 class="accordion-header" id="headingThree">
+                        <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree">LHV</button>                     
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                        <ul class="list-unstyled card-body">
+                            <li>Ettevõttest</li>
+                            <li>Investorile</li>
+                            <li>Tööpakkumised</li>
+                            <li>Hea tegu</li>
+                            <li>Roheline LHV</li>
+                            <li>Finantsportaal</li>
+                            <li>Uudised</li>
+                            <li>Blogi</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="d-none d-md-block">KONTAKT</h3>
+                    <h2 class="accordion-header" id="headingFour">
+                        <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFour">KONTAKT</button>                     
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                        <ul class="list-unstyled card-body">
+                            <li>Kontaktid</li>
+                            <li>Kontorid</li>
+                            <li>Broneeri kohtumisaeg</li>
+                            <li>Sularahaautomaadid</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -427,14 +463,20 @@
         <!-- FOOTER SOCIALS -->
 
         <nav class="navbar navbar-expand-lg py-3">
-        <div class="container">
-            <a href="#" class="navbar-brand">
+        <div class="container-footer-social">
+            <a href="" class="navbar-brand">
                 <img src="https://www.lhv.ee/assets/images/icons/small/insta.svg" alt="">
+            </a>
+            <a href=""  class="navbar-brand">
                 <img src="https://www.lhv.ee/assets/images/icons/small/fb.svg" alt="">
+            </a>
+            <a href="" class="navbar-brand">
                 <img src="https://www.lhv.ee/assets/images/icons/small/youtube.svg" alt="">
+            </a>
+            <a href="" class="navbar-brand">
                 <img src="https://www.lhv.ee/assets/images/icons/small/soundcloud.svg" alt="">
             </a>
-            <div class="collapse navbar-collapse">
+            <div class="navbar-collapse">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a href="#learn" class="nav-link">
@@ -452,7 +494,7 @@
     <!-- FOOTER DISCLAIMER -->
         <div class="row">
             <div class="col-md-offset-1 disclaimer">
-                <p>AS LHV Group, Tartu mnt 2, 10145, Tallinn. Oled finantsteenuseid pakkuvate ettevõtete AS LHV Pank, AS LHV Finance, AS LHV Kindlustus ja AS LHV Varahaldus veebilehel. Enne finantsteenuse lepingu sõlmimist tutvu teenuse tingimustega või küsi lisainfot. Noteeringud on viivitusega.</p>
+                <p id="footertext">AS LHV Group, Tartu mnt 2, 10145, Tallinn. Oled finantsteenuseid pakkuvate ettevõtete AS LHV Pank, AS LHV Finance, AS LHV Kindlustus ja AS LHV Varahaldus veebilehel. Enne finantsteenuse lepingu sõlmimist tutvu teenuse tingimustega või küsi lisainfot. Noteeringud on viivitusega.</p>
             </div>
         </div>
     </div>
